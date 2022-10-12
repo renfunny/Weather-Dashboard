@@ -1,0 +1,74 @@
+nav {
+  padding: 1rem;
+  border: 1px solid black;
+  background: rgb(67, 122, 190);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 122, 190, 1) 0%,
+    rgba(39, 7, 116, 1) 100%
+  );
+}
+nav h1 {
+  font-size: 2rem;
+  text-align: right;
+  color: aliceblue;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  border: 1px solid red;
+  margin: 0.5rem;
+}
+aside h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+}
+button {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #437abe;
+  color: aliceblue;
+}
+button:hover {
+  background-color: rgb(70, 15, 197);
+}
+button:active {
+  background-color: rgba(39, 7, 116, 1);
+}
+.forecast {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  border: 1px solid blue;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 2.5;
+}
+section h3 {
+  margin: 0.5rem;
+}
+.wrapper {
+  display: flex;
+}
+div.wrapper > * {
+  border: 1px dashed black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 2;
+  background-color: #437abe;
+  color: aliceblue;
+}
+.city-name {
+  font-size: 1.5rem;
+}

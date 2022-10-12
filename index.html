@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Weather Dashboard</title>
   </head>
   <body>
@@ -13,21 +14,61 @@
     </nav>
     <main>
       <aside>
-        <h2>Look for a city</h2>
+        <h1>Search for a city:</h1>
         <input type="text" placeholder="City" id="city-input" />
-        <button>Search</button>
+        <button id="submit">Search</button>
         <hr />
       </aside>
-      <section>
+      <section class="forecast">
         <div class="header">
-          <h2 class="city-name"></h2>
+          <h2 class="city-name" style="float: left"></h2>
+          <img class="header-icon" src="" />
           <p class="temp"></p>
           <p class="wind"></p>
           <p class="humidity"></p>
         </div>
-        <h3>5 Day Forecast:</h3>
+        <div>
+          <h3>5 Day Forecast:</h3>
+          <div class="wrapper">
+            <div class="card-0">
+              <h4 class="date-card">Date</h4>
+              <img class="icon-card" src="" />
+              <p class="temp-card">Temp</p>
+              <p class="wind-card">wind</p>
+              <p class="humi-card">humidity</p>
+            </div>
+            <div class="card-8">
+              <h4 class="date-card">Date</h4>
+              <img class="icon-card" src="" />
+              <p class="temp-card">Temp</p>
+              <p class="wind-card">wind</p>
+              <p class="humi-card">humidity</p>
+            </div>
+            <div class="card-16">
+              <h4 class="date-card">Date</h4>
+              <img class="icon-card" src="" />
+              <p class="temp-card">Temp</p>
+              <p class="wind-card">wind</p>
+              <p class="humi-card">humidity</p>
+            </div>
+            <div class="card-24">
+              <h4 class="date-card">Date</h4>
+              <img class="icon-card" src="" />
+              <p class="temp-card">Temp</p>
+              <p class="wind-card">wind</p>
+              <p class="humi-card">humidity</p>
+            </div>
+            <div class="card-32">
+              <h4 class="date-card">Date</h4>
+              <img class="icon-card" src="" />
+              <p class="temp-card">Temp</p>
+              <p class="wind-card">wind</p>
+              <p class="humi-card">humidity</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <script src="/assets/script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
