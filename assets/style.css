@@ -93,3 +93,14 @@ div.wrapper > * {
 .hidden {
   display: none;
 }
+/* for mobile display */
+@media only screen and (max-width: 1026px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

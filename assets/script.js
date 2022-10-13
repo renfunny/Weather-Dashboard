@@ -34,11 +34,11 @@ function SaveDataToLocalStorage(city) {
   cities = JSON.parse(localStorage.getItem("savedCities")) || [];
   if (!cities.includes(city)) {
     cities.push(city);
-
     localStorage.setItem("savedCities", JSON.stringify(cities));
   }
   // updates the list so it matches the arr in the local storage
   btnList = JSON.parse(localStorage.getItem("savedCities"));
+  document.querySelector(`#city-input`).value = "";
   displayNewbtns();
 }
 
