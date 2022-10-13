@@ -1,3 +1,4 @@
+/* nav styling */
 nav {
   padding: 1rem;
   border: 1px solid black;
@@ -13,11 +14,13 @@ nav h1 {
   text-align: right;
   color: aliceblue;
 }
+/* focuses on the rest of the page */
 main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+/* aside holds the input and all the btns */
 aside {
   margin: 0.5rem;
 }
@@ -28,6 +31,7 @@ aside h1 {
 input {
   width: 100%;
   padding: 0.5rem;
+  border-radius: 10px;
 }
 button {
   width: 100%;
@@ -44,35 +48,6 @@ button:hover {
 button:active {
   background-color: rgba(39, 7, 116, 1);
 }
-.forecast {
-  display: flex;
-  flex-direction: column;
-}
-.header {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  line-height: 2.5;
-}
-section h3 {
-  margin: 0.5rem;
-}
-.wrapper {
-  display: flex;
-}
-div.wrapper > * {
-  border: 1px dashed black;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  line-height: 2;
-  background-color: #437abe;
-  color: aliceblue;
-}
-.city-name {
-  font-size: 1.5rem;
-}
-.hidden {
-  display: none;
-}
 .stored-cities {
   display: flex;
   flex-direction: column;
@@ -85,4 +60,36 @@ div.wrapper > * {
 }
 .city-btn:active {
   background-color: #325a8b;
+}
+/* forecast and its children focus on the right side where the forecast of a city will be displayed */
+.forecast {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 2.5;
+  border: 1px solid rgba(39, 7, 116, 1);
+  border-radius: 10px;
+}
+section h3 {
+  margin: 0.5rem;
+}
+.wrapper {
+  display: flex;
+}
+div.wrapper > * {
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  line-height: 2;
+  background-color: #437abe;
+  color: aliceblue;
+}
+.city-name {
+  font-size: 1.5rem;
+}
+.hidden {
+  display: none;
 }
